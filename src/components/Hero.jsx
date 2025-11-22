@@ -3,7 +3,7 @@ import { images } from '../assets/assets'
 
 const Hero = () => {
   return (
-    <div className="container flex  flex-col justify-center items-center pt-34  mx-auto px-2  md:px-16">
+    <div className="container flex  flex-col justify-center items-center  mx-auto px-2  md:px-16">
       <div className="flex flex-row  justify-between items-center md:gap-12 lg:gap-16">
         <img
           className="w-28  sm:w-32 md:w-40 lg:w-60  "

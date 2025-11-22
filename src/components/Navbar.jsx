@@ -15,8 +15,8 @@ const Navbar = () => {
   }, [showMobileNav])
 
   return (
-    <div className=" absolute top-0 left-0 w-full z-10 overflow-hidden ">
-      <div className="  container max-w-[80%] flex flex-row mx-auto  justify-between items-center py-4 px-2 md:p-6 ">
+    <div className=" sticky top-0 left-0 w-full z-50  bg-white/50   backdrop-blur-xl md:px-20 lg:px-30  ">
+      <div className="  container  flex flex-row mx-auto  justify-between items-center py-4 px-2 md:p-6 ">
         <h3 className="font-medium text-xl sm:text-2xl md:text-3xl ">Berita</h3>
         <div className=" hidden md:flex flex-row  gap-8 ">
           <NavLink
@@ -53,7 +53,7 @@ const Navbar = () => {
 
         <img
           onClick={() => setShowmobileNav(true)}
-          className={`width-8 text-black ${
+          className={`w-8 text-black ${
             showMobileNav ? 'hidden' : 'block'
           } cursor-pointer md:hidden`}
           src={images.menu_icon}
@@ -63,12 +63,12 @@ const Navbar = () => {
         {/* --------Mobile nav------------ */}
         <div
           className={` 
-            fixed right-0 top-0 bottom-0 w-full overflow-hidden bg-white/90  transform transition-transform duration-700 ease-in-out  ${
-              showMobileNav ? 'translate-x-0' : 'translate-x-full'
-            } 
+         fixed top-0 left-0 w-full h-screen bg-white/70  backdrop-blur-3xl z-20  md:hidden transform transition-transform duration-700 ease-in-out  ${
+           showMobileNav ? 'translate-x-0' : 'translate-x-full'
+         } 
         `}
         >
-          <div className="flex flex-col  gap-8">
+          <div className="flex flex-col  gap-8 ">
             <div className="flex justify-end">
               <img
                 onClick={() => setShowmobileNav(false)}

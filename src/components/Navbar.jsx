@@ -15,8 +15,8 @@ const Navbar = () => {
   }, [showMobileNav])
 
   return (
-    <div className=" sticky top-0 left-0 w-full z-50  bg-white/50   backdrop-blur-xl md:px-20 lg:px-30  ">
-      <div className="  container  flex flex-row mx-auto  justify-between items-center py-4 px-2 md:p-6 ">
+    <div className=" sticky top-0 left-0 w-full z-20  bg-white/50   backdrop-blur-xl md:px-20 lg:px-30  ">
+      <div className="  container  flex flex-row mx-auto justify-between items-center py-4 px-4 md:p-6 ">
         <h3 className="font-medium text-xl sm:text-2xl md:text-3xl ">Berita</h3>
         <div className=" hidden md:flex flex-row  gap-8 ">
           <NavLink
@@ -61,11 +61,10 @@ const Navbar = () => {
         />
 
         {/* --------Mobile nav------------ */}
+
         <div
-          className={` 
-         fixed top-0 left-0 w-full h-screen bg-white/70  backdrop-blur-3xl z-20  md:hidden transform transition-transform duration-700 ease-in-out  ${
-           showMobileNav ? 'translate-x-0' : 'translate-x-full'
-         } 
+          className={` fixed  top-0 right-0 h-screen  bottom-0 w-full sm:hidden  z-50 bg-white/90 backdrop-blur-3xl  transition-transform duration-700 ease-in-out
+     ${showMobileNav ? '  translate-x-0  ' : ' translate-x-full '} 
         `}
         >
           <div className="flex flex-col  gap-8 ">

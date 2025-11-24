@@ -3,7 +3,7 @@ import { days } from '../assets/calender'
 
 const Calender = () => {
   return (
-    <div className="flex flex-row gap-1 sm:gap-2 md:gap-10 justify-center  mt-8">
+    <div className="flex flex-row gap-1 sm:gap-2 md:gap-10 justify-center mt-4 sm:mt-6 md:mt-8">
       {days.map((day, index) => (
         <div
           key={index}

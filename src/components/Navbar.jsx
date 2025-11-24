@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* --------Mobile nav------------ */}
 
         <div
-          className={` fixed  top-0 right-0 h-screen  bottom-0 w-full sm:hidden  z-50 bg-white/90 backdrop-blur-3xl  transition-transform duration-700 ease-in-out
+          className={` fixed  top-0 right-0 h-screen  sm:hidden  bottom-0 w-full  z-50 bg-white/90 backdrop-blur-3xl  transition-transform duration-700 ease-in-out
      ${showMobileNav ? '  translate-x-0  ' : ' translate-x-full '} 
         `}
         >

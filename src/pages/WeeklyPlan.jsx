@@ -1,7 +1,12 @@
 import React from 'react'
+import PlannedMeals from '../components/PlannedMeals'
 
 const WeeklyPlan = () => {
-  return <div>WeeklyPlan</div>
+  return (
+    <div>
+      <PlannedMeals />
+    </div>
+  )
 }
 
 export default WeeklyPlan
